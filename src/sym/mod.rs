@@ -22,6 +22,7 @@ pub mod code11;
 pub mod code128;
 pub mod codabar;
 pub mod tf;
+pub mod msi;
 mod helpers;
 
 use std::ops::Range;

@@ -84,7 +84,7 @@ impl Code39 {
     fn char_encoding(&self, c: char) -> [u8; 12] {
         match CHARS.iter().find(|&ch| ch.0 == c) {
             Some(&(_, enc)) => enc,
-            None => panic!(format!("Unknown char: {}", c)),
+            None => panic!("Unknown char: {}", c),
         }
     }
 
